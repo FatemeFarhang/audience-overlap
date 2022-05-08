@@ -1,7 +1,6 @@
 import os
 import random
 import collections
-from webbrowser import get
 from dotenv import load_dotenv
 from instagramy import InstagramUser
 load_dotenv()
