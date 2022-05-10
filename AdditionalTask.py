@@ -5,6 +5,7 @@ from dotenv import load_dotenv
 from instagramy import InstagramUser
 load_dotenv()
 
+################# Additional Task
 username = 'nike'
 # Get random session id from .env file
 session_id = random.choices(os.getenv('session_ids').split())[0]
@@ -18,10 +19,6 @@ except KeyError:
 finally:
     session_id = random.choices(os.getenv('session_ids').split())[0]
     user = InstagramUser(username, sessionid=session_id, from_cache=True)
-
-
-def find_unique_follower_ratio():
-    pass
 
 
 def get_average_comments_and_likes(): 
